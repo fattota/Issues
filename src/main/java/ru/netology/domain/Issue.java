@@ -9,9 +9,9 @@ public class Issue<label, assignee> {
     private boolean close;
     private String author;
     private Set<String> label;
-    private Set<String> project;
+    private String project;
     private Set<String> milestone;
-    private Set<String> assignee;
+    private String assignee;
     private Set<String> tag;
 
 
@@ -20,7 +20,7 @@ public class Issue<label, assignee> {
     }
 
 
-    public Issue(int id, String name, boolean close, String author, Set<String> label, Set<String> project, Set<String> milestone, Set<String> assignee, Set<String> tag) {
+    public Issue(int id, String name, boolean close, String author, Set<String> label, String project, Set<String> milestone, String assignee, Set<String> tag) {
         this.id = id;
         this.name = name;
         this.close = close;
@@ -72,11 +72,11 @@ public class Issue<label, assignee> {
         this.label = label;
     }
 
-    public Set<String> getProject() {
+    public String getProject() {
         return project;
     }
 
-    public void setProject(Set<String> project) {
+    public void setProject(String project) {
         this.project = project;
     }
 
@@ -88,11 +88,11 @@ public class Issue<label, assignee> {
         this.milestone = milestone;
     }
 
-    public Set<String> getAssignee() {
+    public String getAssignee() {
         return assignee;
     }
 
-    public void setAssignee(Set<String> assignee) {
+    public void setAssignee(String assignee) {
         this.assignee = assignee;
     }
 
